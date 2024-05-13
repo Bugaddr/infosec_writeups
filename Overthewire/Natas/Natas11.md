@@ -1,7 +1,7 @@
 ## Natas 11
 
 # Procedure
-1. check cookies, it has `MGw7JCQ5OC04PT8jOSpqdmkgJ25nbCorKCEkIzlscm5oKC4qLSgubjY%3D` which has %3D in last which means `=` after decoding, so after decoding this string with cybecchef, we get `MGw7JCQ5OC04PT8jOSpqdmkgJ25nbCorKCEkIzlscm5oKC4qLSgubjY=`
+1. check cookies, it has `MGw7JCQ5OC04PT8jOSpqdmkgJ25nbCorKCEkIzlscm5oKC4qLSgubjY%3D` which has %3D in last which means `=` after decoding, so after decoding this string with cyberchef, we get `MGw7JCQ5OC04PT8jOSpqdmkgJ25nbCorKCEkIzlscm5oKC4qLSgubjY=` that is `0l;$$98-8=?#9*jvi 'ngl*+(!$#9lrnh(.*-(.n6` rubbish ?? or maybe xor encrypted
 
 2. Now lets check source code on main page, it has
 ```
@@ -87,3 +87,6 @@ Background color: <input name=bgcolor value="<?=$data['bgcolor']?>">
 </body>
 </html>
 ```
+basically it has a php code, so ig we can fuckup with url queries and/or cookies
+
+3. https://twitter.com/bugaddr/status/1789995795711705172
