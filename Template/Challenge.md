@@ -1,5 +1,0 @@
-# Name (Points)
-
-# Description
-
-# Solution
