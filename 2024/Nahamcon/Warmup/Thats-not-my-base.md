@@ -1,4 +1,5 @@
 # Description
+
 50 pts
 That's Not My Base
 
@@ -10,5 +11,6 @@ Everyone knows about Base64, but do you know about this one?
 
 `F#S<YRXdP0Fd=,%J4c$Ph7XV(gF/*]%C4B<qlH+%3xGHo)\`
 
-# Solution
+## Solution
+
 1. Paste in cyberchef, Apply from base92

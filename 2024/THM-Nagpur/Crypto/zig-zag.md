@@ -1,4 +1,5 @@
-#  Zig-Zag
+# Zig-Zag
+
 100
 
 Your friend is so sure of his encryption method that he give you secret message intended to his boss : jPG0UMl4_ins13z3Tts_-np__ZgCy41R

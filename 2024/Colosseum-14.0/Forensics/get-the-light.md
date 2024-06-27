@@ -2,9 +2,9 @@
 
 Description of the question
 
-Just Get the Flag 
+Just Get the Flag
 
-# Solution
+## Solution
 
 1. Cat the file to get binary digits and then convrt it to ascii
 

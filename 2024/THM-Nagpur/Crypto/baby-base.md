@@ -1,4 +1,5 @@
-#  Baby Base
+# Baby Base
+
 50
 
 Baby ko base psand hai!
@@ -9,6 +10,6 @@ Flag Format: ThunderCipher{a-zA-Z0-9}
 
 Author: p4nth3r
 
-# Solution
+## Solution
 
 ![flag](assets/baby-base/image.png)

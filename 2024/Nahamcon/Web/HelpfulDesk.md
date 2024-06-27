@@ -1,9 +1,11 @@
 # Description
+
 Author: @HuskyHacks
 
 HelpfulDesk is the go-to solution for small and medium businesses who need remote monitoring and management. Last night, HelpfulDesk released a security bulletin urging everyone to patch to the latest patch level. They were scarce on the details, but I bet that can't be good...
 
-# Solution
+## Solution
+
 1. Start instance
 2. login with admin:admin
 3. Check security advisory, and download all three versions of the helpdesk software pkg, i.e 1.1 1.2 1.0

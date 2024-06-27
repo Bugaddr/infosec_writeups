@@ -1,4 +1,5 @@
-#  Cricket
+# Cricket
+
 50
 
 I was watching match yesterday from the stands, Can you guess which city I live in ??
@@ -13,6 +14,6 @@ Author: Parth Thakre
 
 1. You shld know it, if not then zoom and google search Kalaignar Karunanidhi stand
 
-![provided image](assets/Cricket/image.png)
+    ![provided image](assets/Cricket/image.png)
 
 2. Chidambaram stadium, Chennai

@@ -1,4 +1,5 @@
-#  Un-Redact
+# Un-Redact
+
 10 PTs
 
 There is some secret stuff that has been redacted by black block, Can you help me reveal the secret message.
@@ -9,8 +10,8 @@ Flag Format: ThunderCipher{a-zA-Z0-9}
 
 Author: iamnew2468
 
-# Solution
+## Solution
 
 1. Check on aperisolve, superimposed image
 
-![alt text](assets/un-redacted/image.png)
+    ![alt text](assets/un-redacted/image.png)
