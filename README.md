@@ -8,6 +8,10 @@ Writeups for CTF, Wargames & Bug-bounty's
 3. [BCACTF-5.0](https://github.com/Bugaddr/Infosec_Writeups/tree/main/2024/BCACTF-5.0)
 4. [THM-Nagpur](https://github.com/Bugaddr/Infosec_Writeups/tree/main/2024/THM-Nagpur)
 
+## 2025
+
+1. [NCIIPC Pentathon](https://github.com/Bugaddr/infosec_writeups/tree/main/2025/PENTATHON)
+
 ## Practice
 
 1. [Cryptopals](https://github.com/Bugaddr/Infosec_Writeups/tree/main/Practice/Cryptopals)
