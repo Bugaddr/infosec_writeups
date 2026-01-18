@@ -14,8 +14,8 @@ Writeups for CTF, Wargames & Bug-bounty's
 
 ## 2026
 
-1. [TCS Hackquest 10 Round 1](https://github.com/Bugaddr/infosec_writeups/2026/TCS_Hackquest10_Round_1)
-2. [TCS Hackquest 10 Round 2](https://github.com/Bugaddr/infosec_writeups/2026/TCS_Hackquest10_Round_2)
+1. [TCS Hackquest 10 Round 1](https://github.com/Bugaddr/infosec_writeups/tree/main/2026/TCS_Hackquest10_Round_1)
+2. [TCS Hackquest 10 Round 2](https://github.com/Bugaddr/infosec_writeups/tree/main/2026/TCS_Hackquest10_Round_2)
 
 ## Practice
 
