@@ -1,0 +1,7 @@
+localStorage.setItem(
+  "timelock_v1_data",
+  JSON.stringify({
+    elapsed: 12.5 * 60 * 60 * 1000
+  })
+);
+location.reload();

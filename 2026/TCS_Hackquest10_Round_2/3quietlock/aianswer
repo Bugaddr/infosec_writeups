@@ -1,0 +1,57 @@
+To solve the **Quiet Leak** challenge, we must analyze the network traffic to identify how data is being exfiltrated. The provided PCAP trace shows a series of **DNS over HTTPS (DoH)** queries directed at `dns.google`.
+
+### Analysis of the Exfiltration Method
+
+The netrunner is hiding data within the `POST` request bodies of DoH queries. Each relevant packet contains a base64-encoded string followed by the domain `doh.tcs.com`.
+
+A critical observation is the single character preceding each base64 string, which acts as a **sequence marker** to ensure the data can be reassembled in the correct order. These markers include characters like `4`, `5`, `6`, `7`, `8`, `9`, `:`, `;`, `<`, and `=`.
+
+### Identifying the Flag Fragments
+
+By isolating the queries with sequence markers `4` through `7`, we find the components of the flag:
+
+| Sequence Marker | Base64 Fragment | Decoded Content | Source |
+| --- | --- | --- | --- |
+| `4` | `SFFYe2U0M2NkOTlk` | <br>`HFX{e43cd99d` |  |
+| `5` | `YmE1ZDdlYTA` | <br>`ba5d7ea0` |  |
+| `6` | `Y2VjNzhlOGU` | <br>`cec78e8e` |  |
+| `7` | `YzMxYzUzOWN9` | <br>`c31c539c}` |  |
+
+### Other Exfiltrated Data
+
+The remaining sequences (`8` through `=`) reveal that the netrunner also exfiltrated a list of sensitive system files, likely to distract from the flag fragments:
+
+* 
+**8**: `/etc/hosts` 
+
+
+* 
+**9**: `/etc/crontab` 
+
+
+* 
+**:**: `/etc/passwd` 
+
+
+* 
+**;**: `/var/log/auth.log` 
+
+
+* 
+**<**: `/home/user/.bash_history` 
+
+
+* 
+**=**: `/root/.ssh/authorized_keys` 
+
+
+
+---
+
+### Final Flag
+
+Combining the fragments from sequences 4, 5, 6, and 7 results in the full credential:
+
+**`HFX{e43cd99dba5d7ea0cec78e8ec31c539c}`**
+
+**Would you like me to analyze the other exfiltrated files or look for more hidden noise in the pcap?**

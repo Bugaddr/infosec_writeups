@@ -1,0 +1,1 @@
+http.request.method == "POST" && http.host == "dns.google"

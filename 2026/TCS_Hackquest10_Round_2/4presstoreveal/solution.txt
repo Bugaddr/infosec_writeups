@@ -1,0 +1,96 @@
+Here’s a **clean, platform-ready final write-up** you can submit or share.
+(No trial-and-error, no dead paths — just the intended solution.)
+
+---
+
+# Press to Reveal – 300
+
+### Crypto / Misc Write-Up
+
+## Challenge Description
+
+A fragment was extracted from the Neon Grid’s mainframe.
+The ghost behind it *“thinks in nothing but JavaScript keycodes”*.
+The data has been scrambled — *“only a shift of forty-seven will bring it back into alignment.”*
+Flag format: `HQX{}`
+
+---
+
+## Step 1: Apply ROT47
+
+The provided data is ROT47-encoded.
+Applying ROT47 yields the following JavaScript array:
+
+```js
+const key = [
+ 72, 81, 88, 219, 54, 54, 70, 188, 69, 55, 65, 189, 68, 50, 53, 57, 189,
+ 48, 65, 67, 34, 55, 50, 55, 52, 189, 48, 51, 27, 65, 66, 57, 17, 51,
+ 48, 33, 53, 57, 56, 55, 20, 52, 55, 69, 187, 69, 221
+];
+```
+
+---
+
+## Step 2: Remove Noise (Control Keycodes)
+
+Several values correspond to **non-printing control keys** in JavaScript and are intentionally added as noise:
+
+| Keycode | Meaning  |
+| ------- | -------- |
+| 17      | Ctrl     |
+| 20      | CapsLock |
+| 27      | Escape   |
+| 33      | PageUp   |
+
+These do **not** contribute to the flag and are removed.
+
+---
+
+## Step 3: Identify the Real Payload
+
+After removing control keys and ignoring structural separators
+(`219`, `221`, `187–189`, `188`), the remaining meaningful values resolve to:
+
+* Digits: `0–9`
+* Letters: `a–f`
+
+This reveals the actual payload is a **32-character lowercase hexadecimal string**.
+
+The “JavaScript keycodes” hint is **intentional misdirection** — the real signal is that the data collapses into valid hex once cleaned.
+
+---
+
+## Step 4: Reconstruct the Flag
+
+Extracting and joining the hex characters gives:
+
+```
+66fe7ad2590ac727403ab930598747ee
+```
+
+Applying the required flag format:
+
+```
+HQX{66fe7ad2590ac727403ab930598747ee}
+```
+
+---
+
+## ✅ Final Flag
+
+```
+HQX{66fe7ad2590ac727403ab930598747ee}
+```
+
+---
+
+## Key Takeaways
+
+* ROT47 often hides **printable but misleading data**
+* Control keycodes are common **noise injections**
+* When output resembles chaos, check for **hex collapse**
+* JS-themed challenges frequently mix **keyboard lore with misdirection**
+
+---
+
+**Challenge solved.**

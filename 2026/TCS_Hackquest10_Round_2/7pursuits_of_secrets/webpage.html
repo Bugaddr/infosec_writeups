@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purr-suit of Secrets</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <a href="#">Purr-suit of Secrets</a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INTRO -->
+  <section class="introduction">
+    <div class="intro-inner">
+      <h1>Welcome to Purr-suit of Secrets</h1>
+      <p>
+        A simple, responsive gallery of cats. Click an image to preview it in the center, or download the original.
+      </p>
+      <button onclick="location.href='#gallery'">View Full Gallery</button>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured" id="featured">
+    <h2>Featured Images</h2>
+    <div class="featured-grid">
+      <div class="featured-item">
+        <img src="images/watermark/Crimson_Wave.jpg" alt="Beautiful Cat" />
+        <h3>Beautiful Cat</h3>
+        <p>Playful paws, serene naps.</p>
+      </div>
+      <div class="featured-item">
+        <img src="images/watermark/Eclipse_Frame.jpg" alt="Majestic Cat" />
+        <h3>Majestic Cat</h3>
+        <p>Shadow, lighting, elegance.</p>
+      </div>
+      <div class="featured-item">
+        <img src="images/watermark/Stellar_View.jpg" alt="Meow Cat" />
+        <h3>Meow Cat</h3>
+        <p>Soft purrs and curious gaze.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDESHOW -->
+  <div class="slideshow">
+    <div class="slide active">
+      <img src="images/watermark/Galaxy_Whirl.jpg" alt="Cat 1" />
+      <div class="caption">Beautiful Cat</div>
+    </div>
+    <div class="slide">
+      <img src="images/watermark/Lunar_Path.jpg" alt="Cat 2" />
+      <div class="caption">Majestic Cat</div>
+    </div>
+    <div class="slide">
+      <img src="images/watermark/Mystic_Shade.jpg" alt="Cat 3" />
+      <div class="caption">Meow Cat</div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="gallery" id="gallery">
+    <!-- existing images -->
+    <div class="gallery-item">
+      <img src="images/watermark/Aurora_Glow.jpg" alt="Cat" data-title="Aurora Glow" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Cosmic_Trail.jpg" alt="Cat" data-title="Cosmic Trail" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Crimson_Wave.jpg" alt="Cat" data-title="Crimson Wave" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Eclipse_Frame.jpg" alt="Cat" data-title="Eclipse Frame" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Ethereal_Glow.jpg" alt="Cat" data-title="Ethereal Glow" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Galaxy_Whirl.jpg" alt="Cat" data-title="Galaxy Whirl" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Lunar_Path.jpg" alt="Cat" data-title="Lunar Path" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Mystic_Shade.jpg" alt="Cat" data-title="Mystic Shade" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Nebula_Burst.jpg" alt="Cat" data-title="Nebula Burst" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Obsidian_Dream.jpg" alt="Cat" data-title="Obsidian Dream" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Pixel_Vision.jpg" alt="Cat" data-title="Pixel Vision" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Radiant_Sky.jpg" alt="Cat" data-title="Radiant Sky" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Stellar_View.jpg" alt="Cat" data-title="Stellar View" />
+    </div>
+    <div class="gallery-item">
+      <img src="images/watermark/Velvet_Shimmer.jpg" alt="Cat" data-title="Velvet Shimmer" />
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>Simple cat gallery with image preview and download.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#gallery">View Gallery</a></li>
+          <li><a href="#featured">Featured</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Cat Gallery. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- PLAYFUL CAT -->
+  <div id="playful-cat" aria-hidden="true">
+    <div class="cat-body">
+      <div class="cat-ear ear-left"></div>
+      <div class="cat-ear ear-right"></div>
+      <div class="cat-face">
+        <div class="cat-eye eye-left"></div>
+        <div class="cat-eye eye-right"></div>
+        <div class="cat-mouth"></div>
+      </div>
+      <div class="cat-paw paw-left"></div>
+      <div class="cat-paw paw-right"></div>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

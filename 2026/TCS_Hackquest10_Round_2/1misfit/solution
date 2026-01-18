@@ -1,0 +1,7 @@
+  541  nano text
+  542  grep -o '[a-z]' text
+  543  grep -o '[A-Z]' text | tr -d '\n' 
+  544  nano text2
+  545  grep -o '[a-z]' text2
+  546  grep -o '[A-Z]' text2 | tr -d '\n' 
+  547  grep -o '[a-z]' text2 | tr -d '\n' 
